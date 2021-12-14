@@ -32,9 +32,9 @@ public class MyTestStepDefinition {
     public void user_enters_username_and_Password() throws Throwable {
 
         WebElement email = driver.findElement(By.xpath("//*[@id='login-popup-login']/form/input[2]"));
-        email.sendKeys("aoudia_f@yahoo.fr");
+        email.sendKeys("kahina.merai@gmail.com");
         WebElement password = driver.findElement(By.xpath("//*[@id='login-popup-login']/form/input[3]"));
-        password.sendKeys("9vkrmaq6");
+        password.sendKeys("Abcd1234");
         driver.findElement(By.xpath("//button[text()='Connexion']")).click();
     }
 
