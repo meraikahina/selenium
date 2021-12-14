@@ -17,9 +17,8 @@ public class MyTestStepDefinition {
 
     @Given("^user is  on homepage$")
     public void user_is_on_homepage() throws Throwable {
-        System.setProperty("webdriver.chrome.driver","C:/apps/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","src/test/java/chromedriver.exe");
         driver = new ChromeDriver();
-        //driver = new RemoteWebDriver(new URL("http://127.0.0.1:9515"), new ChromeOptions());
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.legalife.fr/");
     }
